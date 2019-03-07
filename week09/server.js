@@ -10,3 +10,7 @@ app.set("view engine","ejs");
 app.get("/", () => {
     console.log("this is the root");
 });
+
+app.listen(5000, () => {
+    console.log("listening...");
+});
