@@ -7,14 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="package" action="/main" method="post">
+    <form class="package" action="calculate" method="GET">
+        <p>Package Type:</p>
     <select name="packtype">
-        <option>Stamped Letter</option>
-        <option>Metered Letter</option>
-        <option>Flats - Large Envelope</option>
-        <option>First-Class Package</option>
+        <option value="Stamped Letter">Stamped Letter</option>
+        <option value="Metered Letter">Metered Letter</option>
+        <option value="Flats-Large Envelope">Flats - Large Envelope</option>
+        <option value="First-Class Package">First-Class Package</option>
     </select>
-    <input type="number" name="weight">
+    <br>
+    <p>Weight (oz):</p>
+    <input type="text" name="weight">
+    <br>
+    <input type="submit" value="Calculate">
+
     </form>
 </body>
 </html>
