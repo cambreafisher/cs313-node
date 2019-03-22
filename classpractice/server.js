@@ -23,6 +23,7 @@ function handlePlayGame(req, res) {
     const winner = "Player";
 
     const params = {playerWeapon: playerWeapon, cpuWeapon: cpuWeapon, winner: winner};
+    console.log(params);
     res.render("results", params);
 }
 
